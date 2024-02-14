@@ -7,13 +7,15 @@ using namespace std;
 
 const int MAXN = 200100;
 const int MOD = 1000000007;
+const double PI = 3.14159265358979323846;
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
 using namespace std;
 void solve() {
-    //Write you code here
+    std::cout << std::fixed << std::showpoint << std::setprecision(10);
+    //Write your code here
 }
 
 int32_t main() {
