@@ -12,6 +12,12 @@ const double PI = 3.14159265358979323846;
 #include <cstdlib>
 #include <ctime>
 
+int powll(int b, int p)
+{
+    int a=1;
+    forn(i,0,p) a= a*b%MOD;
+    return a;
+}
 using namespace std;
 void solve() {
     std::cout << std::fixed << std::showpoint << std::setprecision(10);
