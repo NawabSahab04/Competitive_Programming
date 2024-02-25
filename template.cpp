@@ -21,6 +21,20 @@ int powll(int b, int p)
     forn(i,0,p) a= a*b%MOD;
     return a;
 }
+bool subsequence(string t, string s) {
+    if(s == t)
+    return true;
+    int n = s.size();
+    int m = t.size();
+    int j = 0;
+    for(int i = 0; i < n; i++){
+        if(t[j] == s[i])
+        j++;
+        if(j == t.size())
+        return true;
+    }
+    return false;
+}
 using namespace std;
 void solve() {
     std::cout << std::fixed << std::showpoint << std::setprecision(10);
