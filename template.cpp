@@ -5,7 +5,8 @@ using namespace std;
 #define endl "\n" 
 #define int long long
 #define GETBIT(a, n) ((a >> n) & 1)
-#define BITCOUNT(a) __builtin_popcountll(a)
+#define BITCOUNT(a) __builtin_popcount(a)
+//add ll at the end of bitwise functions for long long, else they will convert to int by default
 //BITCOUNT performs an operation for each bit in the given number, and stores the sum
 
 const int MAXN = 200100;
