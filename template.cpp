@@ -49,7 +49,7 @@ bool subsequence(string t, string s) {
 }
 using namespace std;
 void solve() {
-    std::cout << std::fixed << std::showpoint << std::setprecision(10);
+    std::cout << std::fixed << std::showpoint << std::setprecision(8);
     //Write your code here
 }
 
