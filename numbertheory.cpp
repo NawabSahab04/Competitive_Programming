@@ -126,3 +126,24 @@ long long SumOfDivisors(long long num) {
     }
     return total;
 }
+
+
+int spf[100001];
+void sieve(){
+    forn(i,0,100001) spf[i] = i;
+    forn(i,2,100001){
+        for (int j = 2*i; j<100001; j+=i){
+            if (spf[j]==j) spf[j]=i;
+        }
+    }
+}
+
+vector<int> primeFactorise(int n){
+    vector<int> primes;
+    while (n!=1){
+        int x = spf[n];
+        while (n%x==0) n/=x;
+        primes.push_back(x);
+    }
+    return primes;
+}
