@@ -6,6 +6,7 @@ using namespace std;
 #define int long long
 #define GETBIT(a, n) ((a >> n) & 1)
 #define BITCOUNT(a) __builtin_popcount(a)
+#define pb push_back
 //add ll at the end of bitwise functions for long long, else they will convert to int by default
 
 const int MAXN = 200100;
@@ -15,23 +16,6 @@ const double PI = 3.14159265358979323846;
 #include <cstdlib>
 #include <ctime>
 
-long long binpow(long long a, long long b) {
-    long long res = 1;
-    while (b > 0) {
-        if (b & 1)
-            res = res * a;
-        a = a * a;
-        b >>= 1;
-    }
-    return res;
-}
-
-int powll(int b, int p)
-{
-    int a=1;
-    forn(i,0,p) a= a*b%MOD;
-    return a;
-}
 using namespace std;
 void solve() {
     std::cout << std::fixed << std::showpoint << std::setprecision(8);
