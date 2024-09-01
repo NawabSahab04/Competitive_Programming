@@ -16,6 +16,11 @@ const double PI = 3.14159265358979323846;
 #include <cstdlib>
 #include <ctime>
 
+const int N = 2e5+20;
+bool visited[N];
+set<int> adj[N];
+vector<int> comp;
+
 using namespace std;
 void solve() {
     std::cout << std::fixed << std::showpoint << std::setprecision(8);
