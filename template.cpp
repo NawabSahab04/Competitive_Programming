@@ -5,7 +5,7 @@ using namespace std;
 #define endl "\n" 
 #define int long long
 #define GETBIT(a, n) ((a >> n) & 1)
-#define BITCOUNT(a) __builtin_popcount(a)
+#define BITCOUNT(a) __builtin_popcountll(a)
 #define pb push_back
 //add ll at the end of bitwise functions for long long, else they will convert to int by default
 
